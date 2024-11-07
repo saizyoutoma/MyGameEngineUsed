@@ -18,8 +18,8 @@ void Player::Initialize()
 	//ƒ‚ƒfƒ‹‚Ìƒ[ƒh
 	pModel_ = Model::Load("Assets/Model/oden.fbx");
 	assert(pModel_ >= 0);
-	transform_.rotate_.x = 90;
-	transform_.scale_ = { 2.0,2.0,2.0 };
+	//transform_.rotate_.x = 90;
+	transform_.scale_ = { 1.5,1.5,1.5 };
 	transform_.position_.y += 0.5;
 	SphereCollider* col = new SphereCollider(0.8f);
 	this->AddCollider(col);
